@@ -1,1 +1,1 @@
-# socialLoginProject
+서버 IP:172.16.160.178
