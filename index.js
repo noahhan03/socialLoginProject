@@ -28,5 +28,5 @@ router.route('/ping').get(ping);
 router.route('/all-users').get(getAllUsers);
 
 
-app.use('/socialLoginProject/api/v1',router);
+app.use('/socialLoginProject/api/v1/',router);
 app.listen(serverPort);

@@ -2,9 +2,8 @@
   "name": "noah",
   "version": "1.0.0",
   "description": "서버 IP:172.31.23.238",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,12 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express":"4.19.2",
-    "body-parser":"1.20.2",
-    "cors":"2.8.5",
+    "body-parser": "^1.20.2",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
     "moment-timezone": "0.5.45",
-    "dotenv":"16.4.5",
-    "mysql2":"3.9.7"
+    "mysql2": "3.9.7"
   }
-  
 }

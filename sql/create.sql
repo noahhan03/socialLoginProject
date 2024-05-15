@@ -1,6 +1,6 @@
-DROP SCHEMA IF EXISTS eos_week2;
-CREATE SCHEMA IF NOT EXISTS eos_week2 DEFAULT CHARACTER SET utf8;
-USE eos_week2;
+DROP SCHEMA IF EXISTS socialLoginProject;
+CREATE SCHEMA IF NOT EXISTS socialLoginProject DEFAULT CHARACTER SET utf8;
+USE socialLoginProject;
 
 -- --------------------------------
 
@@ -27,20 +27,20 @@ INSERT INTO User(userId, username, profileImg) VALUES
 
 -- --------------------------------
 
-SELECT userId, username
-FROM User
-ORDER BY created
-DESC Limit 1;
+-- SELECT userId, username
+-- FROM User
+-- ORDER BY created
+-- DESC Limit 1;
 
-SELECT username
-FROM User
-WHERE userId = 'asd';
+-- SELECT username
+-- FROM User
+-- WHERE userId = 'asd';
 
-DELETE FROM User
-WHERE username='박근원';
+-- DELETE FROM User
+-- WHERE username='박근원';
 
-UPDATE User
-SET userId = 'dsa'
-WHERE username = '김기재';
+-- UPDATE User
+-- SET userId = 'dsa'
+-- WHERE username = '김기재';
 
 
