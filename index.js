@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 
 import { ping } from './controller/system.js';
+import { getAllUsers } from './lib/userInfo.js';
 
 const serverPort=3000; //3000 번 포트로 접속
 
@@ -24,6 +25,8 @@ const router = express.Router();
 // 라우터 접속, ip 처럼 접속
 
 router.route('/ping').get(ping);
+router.route('/all-users').get(getAllUsers);
+
 
 app.use('/socialLoginProject/api/v1',router);
 app.listen(serverPort);
